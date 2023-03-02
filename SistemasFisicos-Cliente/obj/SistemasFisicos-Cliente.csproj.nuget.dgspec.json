@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Trabajos\\5 SEMESTRE\\Fisicos\\Proyecto\\SistemasFisicos-Cliente\\SistemasFisicos-Cliente.csproj": {}
+    "D:\\Universidad\\QUINTO SEMESTRE\\Fisicos\\Forms-Servidor_Cliente-C\\SistemasFisicos-Cliente\\SistemasFisicos-Cliente.csproj": {}
   },
   "projects": {
-    "D:\\Trabajos\\5 SEMESTRE\\Fisicos\\Proyecto\\SistemasFisicos-Cliente\\SistemasFisicos-Cliente.csproj": {
+    "D:\\Universidad\\QUINTO SEMESTRE\\Fisicos\\Forms-Servidor_Cliente-C\\SistemasFisicos-Cliente\\SistemasFisicos-Cliente.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Trabajos\\5 SEMESTRE\\Fisicos\\Proyecto\\SistemasFisicos-Cliente\\SistemasFisicos-Cliente.csproj",
+        "projectUniqueName": "D:\\Universidad\\QUINTO SEMESTRE\\Fisicos\\Forms-Servidor_Cliente-C\\SistemasFisicos-Cliente\\SistemasFisicos-Cliente.csproj",
         "projectName": "SistemasFisicos-Cliente",
-        "projectPath": "D:\\Trabajos\\5 SEMESTRE\\Fisicos\\Proyecto\\SistemasFisicos-Cliente\\SistemasFisicos-Cliente.csproj",
-        "packagesPath": "C:\\Users\\Santiago Restrepo\\.nuget\\packages\\",
-        "outputPath": "D:\\Trabajos\\5 SEMESTRE\\Fisicos\\Proyecto\\SistemasFisicos-Cliente\\obj\\",
+        "projectPath": "D:\\Universidad\\QUINTO SEMESTRE\\Fisicos\\Forms-Servidor_Cliente-C\\SistemasFisicos-Cliente\\SistemasFisicos-Cliente.csproj",
+        "packagesPath": "C:\\Users\\santi\\.nuget\\packages\\",
+        "outputPath": "D:\\Universidad\\QUINTO SEMESTRE\\Fisicos\\Forms-Servidor_Cliente-C\\SistemasFisicos-Cliente\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Santiago Restrepo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\santi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -62,7 +62,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -123,8 +123,13 @@ namespace SistemasFisicos_Cliente
         private void button2_Click(object sender, EventArgs e)
         {
             activo = false;
-            conexiones.Text += "Me desconecte.";
+            conexiones.Text += "\r\nMe desconecte.";
             button2.Enabled = false;
+        }
+
+        private void Form1_Deactivate(object sender, EventArgs e)
+        {
+            activo = false;
         }
     }
 }

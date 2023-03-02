@@ -20,11 +20,17 @@ namespace SistemasFisicos_Servidor
 
         static ConcurrentQueue<string> values_rx = new ConcurrentQueue<string>();
         static ConcurrentQueue<string> values_tx = new ConcurrentQueue<string>();
+        static bool activo;
         int control;
+        int buenas;
+        int malas;
 
         public Form1()
         {
             control = 0;
+            buenas = 0;
+            malas = 0;
+            activo = true;
             InitializeComponent();
             Mensaje();
         }
@@ -70,6 +76,54 @@ namespace SistemasFisicos_Servidor
             control = 3;
         }
 
+        public void Mensaje5()
+        {
+            values_tx.Enqueue("\r\nQue lenguaje se trabaja con unity?");
+            values_tx.Enqueue("\r\na. Python");
+            values_tx.Enqueue("\r\nb. Scratch");
+            values_tx.Enqueue("\r\nc. C#");
+
+            control = 4;
+        }
+
+        public void Mensaje6()
+        {
+            values_tx.Enqueue("\r\nQue tipo de traccion es necesaria para hacer drift?");
+            values_tx.Enqueue("\r\na. Traccion integral");
+            values_tx.Enqueue("\r\nb. Traccion trasera");
+            values_tx.Enqueue("\r\nc. Traccion delantera");
+
+            control = 5;
+        }
+
+        public void Mensaje7()
+        {
+            values_tx.Enqueue("\r\nEl supra mk4 de que annio es?");
+            values_tx.Enqueue("\r\na. 1994");
+            values_tx.Enqueue("\r\nb. 1998");
+            values_tx.Enqueue("\r\nc. 2020");
+
+            control = 6;
+        }
+
+        public void Mensaje8()
+        {
+            values_tx.Enqueue("\r\nCuales son los roles en League Of Legends?");
+            values_tx.Enqueue("\r\na. bosque, mid y ayudante");
+            values_tx.Enqueue("\r\nb. No lo se Rick");
+            values_tx.Enqueue("\r\nc. Top, Jungla, Mid, Adc y Supp");
+
+            control = 7;
+        }
+
+        public void MensajeF()
+        {
+            values_tx.Enqueue("\r\nTerminaste este es tu resultado:");
+            values_tx.Enqueue("\r\nRespuestas Buenas: " + buenas);
+            values_tx.Enqueue("\r\nRespuestas malas: " + malas);
+        }
+
+
         public void Respuesta()
         {
             if (control == 0)
@@ -81,11 +135,13 @@ namespace SistemasFisicos_Servidor
 
                     if (dato.ToLower().Equals("a"))
                     {
+                        buenas += 1;
                         values_tx.Enqueue("\r\n---Respuesta Correcta---");
                         Mensaje2();
                     }
                     else
                     {
+                        malas += 1;
                         values_tx.Enqueue("\r\n---Respuesta incorrecta---");
                         Mensaje2();
                     }
@@ -101,11 +157,13 @@ namespace SistemasFisicos_Servidor
 
                     if (dato.ToLower().Equals("c"))
                     {
+                        buenas += 1;
                         values_tx.Enqueue("\r\n---Respuesta Correcta---");
                         Mensaje3();
                     }
                     else
                     {
+                        malas += 1;
                         values_tx.Enqueue("\r\n---Respuesta incorrecta---");
                         Mensaje3();
                     }
@@ -121,11 +179,13 @@ namespace SistemasFisicos_Servidor
 
                     if (dato.ToLower().Equals("b"))
                     {
+                        buenas += 1;
                         values_tx.Enqueue("\r\n---Respuesta Correcta---");
                         Mensaje4();
                     }
                     else
                     {
+                        malas += 1;
                         values_tx.Enqueue("\r\n---Respuesta incorrecta---");
                         Mensaje4();
                     }
@@ -141,13 +201,103 @@ namespace SistemasFisicos_Servidor
 
                     if (dato.ToLower().Equals("a"))
                     {
+                        buenas += 1;
                         values_tx.Enqueue("\r\n---Respuesta Correcta---");
-            
+                        Mensaje5();
                     }
                     else
                     {
+                        malas += 1;
                         values_tx.Enqueue("\r\n---Respuesta incorrecta---");
-                    
+                        Mensaje5();
+                    }
+                }
+            }
+
+            else if (control == 4)
+            {
+                if (values_rx.Count > 0)
+                {
+                    string? dato;
+                    values_rx.TryDequeue(out dato);
+
+                    if (dato.ToLower().Equals("c"))
+                    {
+                        buenas += 1;
+                        values_tx.Enqueue("\r\n---Respuesta Correcta---");
+                        Mensaje6();
+                    }
+                    else
+                    {
+                        malas += 1;
+                        values_tx.Enqueue("\r\n---Respuesta incorrecta---");
+                        Mensaje6();
+                    }
+                }
+            }
+
+            else if (control == 5)
+            {
+                if (values_rx.Count > 0)
+                {
+                    string? dato;
+                    values_rx.TryDequeue(out dato);
+
+                    if (dato.ToLower().Equals("b"))
+                    {
+                        buenas += 1;
+                        values_tx.Enqueue("\r\n---Respuesta Correcta---");
+                        Mensaje7();
+                    }
+                    else
+                    {
+                        malas += 1;
+                        values_tx.Enqueue("\r\n---Respuesta incorrecta---");
+                        Mensaje7();
+                    }
+                }
+            }
+
+            else if (control == 6)
+            {
+                if (values_rx.Count > 0)
+                {
+                    string? dato;
+                    values_rx.TryDequeue(out dato);
+
+                    if (dato.ToLower().Equals("b"))
+                    {
+                        buenas += 1;
+                        values_tx.Enqueue("\r\n---Respuesta Correcta---");
+                        Mensaje8();
+                    }
+                    else
+                    {
+                        malas += 1;
+                        values_tx.Enqueue("\r\n---Respuesta incorrecta---");
+                        Mensaje8();
+                    }
+                }
+            }
+
+            else if (control == 7)
+            {
+                if (values_rx.Count > 0)
+                {
+                    string? dato;
+                    values_rx.TryDequeue(out dato);
+
+                    if (dato.ToLower().Equals("c"))
+                    {
+                        buenas += 1;
+                        values_tx.Enqueue("\r\n---Respuesta Correcta---");
+                        MensajeF();
+                    }
+                    else
+                    {
+                        malas += 1;
+                        values_tx.Enqueue("\r\n---Respuesta incorrecta---");
+                        MensajeF();
                     }
                 }
             }
@@ -167,7 +317,7 @@ namespace SistemasFisicos_Servidor
 
             try
             {
-                while (true)
+                while (activo == true)
                 {
                     //recibiendo
                     if (handler.Available > 0)
@@ -215,8 +365,8 @@ namespace SistemasFisicos_Servidor
             server.Start();
 
             button1.Enabled = false;
-            Conexiones.Text = "--Socket configurado" + "\n";
-
+            Conexiones.Text += "--Socket configurado.";
+            btn_Apagar.Enabled = true;
         }
 
         private void p(object sender, EventArgs e)
@@ -224,9 +374,17 @@ namespace SistemasFisicos_Servidor
             Respuesta();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void btn_Apagar_Click(object sender, EventArgs e)
         {
-            
+            activo = false;
+            btn_Apagar.Enabled = false;
+            button1.Enabled = true;
+            Conexiones.Text += "\r\n--Socket desconectado.";
+        }
+
+        private void Form1_Deactivate(object sender, EventArgs e)
+        {
+            activo = false;
         }
     }
 }

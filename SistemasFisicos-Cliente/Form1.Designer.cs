@@ -44,9 +44,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(555, 45);
+            this.button1.Location = new System.Drawing.Point(486, 34);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 29);
+            this.button1.Size = new System.Drawing.Size(82, 22);
             this.button1.TabIndex = 0;
             this.button1.Text = "Conectar";
             this.button1.UseVisualStyleBackColor = true;
@@ -56,9 +57,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(11, 9);
+            this.label1.Location = new System.Drawing.Point(10, 7);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(235, 70);
+            this.label1.Size = new System.Drawing.Size(190, 55);
             this.label1.TabIndex = 1;
             this.label1.Text = "Cliente";
             // 
@@ -66,9 +67,9 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(30, 301);
+            this.label3.Location = new System.Drawing.Point(26, 226);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 24);
+            this.label3.Size = new System.Drawing.Size(64, 20);
             this.label3.TabIndex = 11;
             this.label3.Text = "Mensaje:";
             // 
@@ -76,9 +77,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(30, 95);
+            this.label2.Location = new System.Drawing.Point(26, 71);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(94, 24);
+            this.label2.Size = new System.Drawing.Size(75, 20);
             this.label2.TabIndex = 10;
             this.label2.Text = "Recibidos:";
             // 
@@ -87,9 +88,10 @@
             this.Enviar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.Enviar.Location = new System.Drawing.Point(30, 328);
+            this.Enviar.Location = new System.Drawing.Point(26, 246);
+            this.Enviar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Enviar.Name = "Enviar";
-            this.Enviar.Size = new System.Drawing.Size(351, 27);
+            this.Enviar.Size = new System.Drawing.Size(308, 23);
             this.Enviar.TabIndex = 9;
             // 
             // Recibir
@@ -97,18 +99,20 @@
             this.Recibir.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.Recibir.Location = new System.Drawing.Point(30, 125);
+            this.Recibir.Location = new System.Drawing.Point(26, 94);
+            this.Recibir.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Recibir.Multiline = true;
             this.Recibir.Name = "Recibir";
             this.Recibir.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.Recibir.Size = new System.Drawing.Size(351, 124);
+            this.Recibir.Size = new System.Drawing.Size(308, 94);
             this.Recibir.TabIndex = 8;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(555, 91);
+            this.button2.Location = new System.Drawing.Point(486, 68);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(94, 29);
+            this.button2.Size = new System.Drawing.Size(82, 22);
             this.button2.TabIndex = 12;
             this.button2.Text = "Apagar";
             this.button2.UseVisualStyleBackColor = true;
@@ -116,9 +120,10 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(291, 371);
+            this.button3.Location = new System.Drawing.Point(255, 278);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(94, 29);
+            this.button3.Size = new System.Drawing.Size(82, 22);
             this.button3.TabIndex = 15;
             this.button3.Text = "Enviar";
             this.button3.UseVisualStyleBackColor = true;
@@ -128,9 +133,9 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(487, 145);
+            this.label4.Location = new System.Drawing.Point(426, 109);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(108, 24);
+            this.label4.Size = new System.Drawing.Size(86, 20);
             this.label4.TabIndex = 14;
             this.label4.Text = "Conexiones:";
             // 
@@ -139,10 +144,12 @@
             this.conexiones.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.conexiones.Location = new System.Drawing.Point(487, 181);
+            this.conexiones.Location = new System.Drawing.Point(426, 136);
+            this.conexiones.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.conexiones.Multiline = true;
             this.conexiones.Name = "conexiones";
-            this.conexiones.Size = new System.Drawing.Size(162, 207);
+            this.conexiones.ReadOnly = true;
+            this.conexiones.Size = new System.Drawing.Size(142, 156);
             this.conexiones.TabIndex = 13;
             // 
             // timer1
@@ -153,10 +160,10 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(687, 443);
+            this.ClientSize = new System.Drawing.Size(601, 332);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.conexiones);
@@ -167,8 +174,10 @@
             this.Controls.Add(this.Recibir);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Cliente";
+            this.Deactivate += new System.EventHandler(this.Form1_Deactivate);
             this.ResumeLayout(false);
             this.PerformLayout();
 

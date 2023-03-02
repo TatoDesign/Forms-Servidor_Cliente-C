@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "SistemasFisicos-Servidor": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}
